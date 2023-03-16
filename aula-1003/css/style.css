@@ -1,0 +1,39 @@
+h2{
+  font-family: verdana;
+  color: #F60;
+  font-size: 45px;
+}
+div{
+  width: 200px;
+  height: 200px;
+  /*
+     declaração de borda com os respetivos itens
+     border-width: 1px;
+     border-style: solid;
+     border-color: #333;
+   */
+  border: 1px solid #333;
+  text-align: center;
+  background: #CCC;
+  float: left;
+  margin: 10px;
+}
+
+div h2{
+  font-family: calibri, verdana, tahoma;
+  font-size: 40px;
+  color: #DC143C;
+}
+
+div p{
+  font-family: arial;
+  font-size:18px;
+}
+
+.fundo-azul{
+  background: #369;
+}
+
+.no-float{
+  clear: both;
+}

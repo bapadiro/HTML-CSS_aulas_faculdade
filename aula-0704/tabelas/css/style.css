@@ -1,0 +1,62 @@
+/* linkar a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* por ter colocado esse font-family no body, todas as tags irão usar essa fonte */
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: rgb(42, 98, 172);
+}
+
+.conteudo-tabela{
+  margin: 10px auto;
+  font-size: 18px;
+  width: 800px;
+  /* border: 1px solid #000; */
+  border-collapse: collapse;
+}
+
+.conteudo-tabela thead tr{
+  background: rgb(42, 98, 172);
+  color: #fff;
+  text-align: left;
+}
+
+.conteudo-tabela th,
+.conteudo-tabela td{
+  padding: 15px;
+}
+
+.conteudo-tabela td img{
+  width: 100px;
+  height: 130px;
+}
+
+.conteudo-tabela tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+
+/* formata todas as linhas pares(even) da tabela  */
+.conteudo-tabela tbody tr:nth-child(even){
+  background: #f9f9f9;
+}
+
+/* formata a útima linha(last-chid) da tabela */
+.conteudo-tabela tbody tr:last-child{
+  border-bottom: 20px solid rgb(42, 98, 172);
+}
+
+.conteudo-tabela tbody tr:hover{
+  font-weight: 900;
+  color: rgb(42, 98, 172);
+}
+
+.conteudo-tabela tfoot{
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}

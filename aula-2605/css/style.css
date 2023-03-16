@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+}
+
+header, footer {
+  width: 100%;
+  height: 10vh;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* menu
+list-style: none - retirar os marcadores dos li
+display: flex; opções do menu ficam uma ao lado da outra - padrão row
+text-decoration: none; - tira o sublinhado dos links
+ */
+
+.links-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-menu li{
+  margin: 0 10px;
+}
+
+.links-menu li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 50% significa que alinhará o meio da imagem com o meio do contêiner. 100% significa que alinhará o último pixel da imagem com o último pixel do contêiner e assim por diante */
+  background-position: 50%;
+
+}
+
+.chamada {
+  width: 30%;
+  height: 60vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.7;
+  /* padding: 0 10px; */
+}
+
+
+.titulo-chamada {
+  font-size: 3.5em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.texto-chamada {
+  font-size: 1.5em;
+  font-weight: 100;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+/* posicionando as chamadas à esquerda */
+.chamada-esquerda{
+  position: relative;
+  left: 20px;
+}
+
+.chamada-direita{
+  position: absolute;
+  right: 20px;
+}
+
+
+/* como temos diferentes imagens de fundo - criamos uma classe para cada imagem */
+.fundo-1 {
+  background-image: url(../praia/praia2.jpg);
+}
+
+.fundo-2 {
+  background-image: url(../praia/gastronomia1.jpg);
+}
+
+.fundo-3 {
+  background-image: url(../praia/eventos2.jpg);
+}
+
+.fundo-4{
+  background-image: url(../praia/hotel.png);
+}
+
+.fundo-5{
+  background-image: url(../praia/lazer.jpg);
+}
+
+.fundo-6{
+  background-image: url(../praia/kids.jpg);
+}
+
+/* vídeo */
+.video-responsivo{
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+
+.video-responsivo iframe{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* ------------------------- responsivo ----------------------------- */
+@media (max-width: 1024px) {
+  .chamada{
+    width:50%;
+  }
+}
+
+/* menu responsivo */
+@media (max-width: 768px) {
+
+  /* formatando o header para que ele fique fixo na página */
+  /* fixed - deixou o menu fixo quando estiver sendo usado em um dispoditivo
+  com no máximo 768.
+  top left - posições iniciais
+  z-index - profundidadde - quanto maior mais na frente ele estará dos outros elementos - só que usa position pode usar o z-index - não funciona com position: static */
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .menu{
+    /* só coloquei por causa do posicionamento do sanduíche */
+    position: relative;
+  }
+
+  .links-menu{
+    width: 30%;
+    height: 50vh;
+    position: fixed;
+    right: -30vw;
+    top: 10vh;
+    background: #000;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2vh;
+    transition: 0.5s;
+  }
+
+  .hamburguer{
+    position: absolute;
+    right: 0;
+    top: -15px;
+    cursor: pointer;
+
+  }
+
+  .linha{
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+  }
+
+  .links-menu.open{
+    right:0 ;
+  }
+
+
+
+
+  /* fim do menu responsivo */
+}
+
+
+
+
+@media (max-width:700px) {
+  body{
+    font-size: 13px;
+  }
+
+  .chamada{
+    width:70%;
+  }
+
+  .texto-chamada{
+    padding: 0 1em;
+  }
+}

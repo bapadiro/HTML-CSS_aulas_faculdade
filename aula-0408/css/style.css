@@ -1,0 +1,6 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.bg-blue {background-color: rgb(2, 2, 29);}
+.text-blue {color: rgb(167, 186, 212);}

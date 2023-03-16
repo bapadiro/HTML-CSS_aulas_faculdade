@@ -1,0 +1,16 @@
+
+body{
+    font-size: 20px;
+    font-family: calibri;
+}
+
+.dados {
+    height: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dados img{
+    margin: 0 10px;
+}

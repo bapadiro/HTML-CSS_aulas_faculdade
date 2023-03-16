@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: #eee;
+}
+
+h1, h2{
+  font-family: 'PT Sans', sans-serif;
+  margin: 10px;
+}
+
+p{
+  margin: 10px 0;
+}
+
+.conteudo{
+  /* centralizando o container com margin auto */
+  margin: 0 auto;
+  /* largura do container sempre terá 90% do body
+     % é uma medida flexível - pixel é fixo*/
+  width: 90%;
+  display: flex;
+  padding: 10px;
+
+}
+
+.caixa{
+  border: 1px solid;
+  width: 300px;
+  height: auto;
+  background: #fff;
+  margin: 0 10px;
+
+}

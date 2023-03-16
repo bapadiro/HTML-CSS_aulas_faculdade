@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulários - Parte 1</title>
+  </head>
+  <body>
+    <h1>Usando Formulários</h1>
+    <!-- inserir a tag que permite a criação do formulário
+    form permite a criação do formulário - todos os componentes devem estar no seu interior. A tag form possui os atributos:
+    id / name - identificar o elemento(form)
+    method - define como as informações serão enviadas.
+   Existem dois tipos: Get - Padrão
+                             Dados são enviados via URL
+                            Limite no tamanho dos dados - 256 caracteres
+                            Pesquisa - Busca - Links de produtos
+
+                      Post - Não é padrão
+                            Dados são enviados encapsulados nos campos dor form
+                            Não tem limite de tamanho
+                            Login - Cadastro - Dados sensíveis
+
+  Action - o que irá acontecer quando o botão de envio for pressionado
+  Pode acontecer isso:
+           Envio para banco de dados (tabela Clientes)
+           Envio para e-mail - disparar um e-mail
+           Envio para outra página - transferência de dados entre páginas
+           Perda das informações lugar nenhum - HTML
+   A action ela terá o endereço de uma script - localização de uma funcionalidade que irá tratar os dados digitados enviando para o destino correto.
+   O botão de envio (Submit) ele dispara o envio dos dados requisiando a action
+   -->
+    <form id="dados" method="post" action="">
+
+      <!-- organize as informações -->
+      <fieldset>
+        <legend>Campos mais comuns do HTML</legend>
+
+        <!-- campo para a digitação de texto
+            type - definir o tipo de campo
+            campos onde o usuário digita - NÃO VOU USAR O ATRIBUTO value
+            placeholder - definir um texto que pode servir como ajuda para o usuário. Assim que é iniciada a digitação o conteúdo desaparece e só retorna caso o valor digitado pelo usuário seja removido.
+            maxlength - número máximo de caracteres.
+            autofocus - dá foco ao campo que possuir esse atributo
+            Label vai linkar o nome ao campo correspondente, para isso o campo deve possui um id.
+         -->
+         <p>
+          <label for="login">Login:</label>
+          <input type="text" name="login" id="login" placeholder="Máximo 20 caracteres" maxlength="20" autofocus>
+        </p>
+
+        <p>
+        <!-- input password - campo para digitação de senhas -->
+         <label for="login">Senha:</label>
+         <input type="password" name="senha" id="Senha" placeholder="Máximo 20 caracteres" maxlength="20">
+       </p>
+
+        <!-- radio button - permite apenas a seleção de 1 única opção
+             para que as opções funcionem é necessário que você configure o name de cada radio, todos devem ter o mesmo name.
+
+             Campos onde o usuário escolhe as opções, devemos usar o value
+        -->
+       <p>
+         <label for="">Escolaridade:</label>
+
+         <input type="radio" name="escola" id="escola1" value="1">
+         <label for="escola1">Ensino Médio</label>
+
+         <input type="radio" name="escola" id="escola2" value="2">
+         <label for="escola2">Ensino Superior</label>
+
+         <input type="radio" name="escola" id="escola3" value="3">
+         <label for="escola3">Pós Graduação</label>
+
+         <input type="radio" name="escola" id="escola4" value="4">
+         <label for="escola4">Mestrado</label>
+
+         <input type="radio" name="escola" id="escola5" value="5">
+         <label for="escola5">Doutorado</label>
+
+       </p>
+
+
+
+
+
+
+
+      </fieldset>
+
+    </form>
+
+  </body>
+</html>

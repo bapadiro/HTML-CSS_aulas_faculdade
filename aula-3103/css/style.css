@@ -1,0 +1,156 @@
+/* Carregando uma fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+body {
+  font-family: 'Baloo Thambi 2', cursive;
+  background: rgb(148, 182, 204);
+
+}
+/* criando a classe para receber o conteúdo  */
+.conteudo {
+  /* definir a largura da div */
+  width: 1200px;
+
+  /* definir a altura da div */
+  height: auto;
+  /* borda - deve ter uma largura - um estilo - uma cor
+    solid - dotted - dashed - double - inset - outset - groove
+  */
+  border: 1px solid #000;
+  /* text-align - alinhamento de texto - left - right - justify - center */
+  text-align: center;
+  /* margens - top - right - bottom - left
+  definir com 1 valor - esse valor será aplicado às 4 margens
+  definir com 2 valores - 1o. superior/inferior - 2o. direita e esquerda
+  definir com 3 valores - 1o. superior - 2o direita e esquerda e 3o. inferior
+  definir com 4 valores - 1o. top - 2o. right - 3o. bottom - 4o. left */
+  /* centralizar um container */
+  margin: 10px auto;
+}
+
+/* classe elementos */
+.elementos{
+  width: 1100px;
+  height: auto;
+  /* inserindo uma cor de fundo */
+  background: rgb(210, 210, 195);
+  text-align: justify;
+  margin: 10px auto;
+  /* padding - preenchimento distância do conteúdo para as extremidades do container
+  quando usamos padding o seu valor será acrescentado à largura e/ou altura*/
+  padding: 10px;
+  /* não permite que o valor do padding seja atribuido ao tamanho do container */
+  box-sizing: border-box;
+}
+
+.elementos h2{
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  font-size: 30px;
+  color: #fff;
+}
+
+.elementos p{
+  font-size: 18px;
+  line-height: 35px;
+}
+
+
+/* classe links */
+.links{
+  /* retira o sublinhado do link */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  color: #000;
+
+}
+
+/* O que vai acontecer quando o mouse estiver sobre o elmento com a classe link */
+.links:hover{
+  border: 1px solid #900;
+  color: #900;
+}
+
+
+/* classe caixas */
+.caixa{
+  width: 200px;
+  height: 250px;
+  border: 1px solid #000;
+  /* permitir que as divs flutuem - float right / left */
+  float: left;
+  margin: 10px 20px 20px 18px;
+  /* para inserir imagens de fundo devo usar a propriedade background e passar a url da imagem */
+  /* background-image - background
+    (../) retorna um nível na estrutura de pastas
+    imagem de fundo por padrão repete
+  */
+  background: url(../images/icone.png);
+}
+
+/* não repetir a imagem de fundo */
+.naorepete{
+  background-repeat: no-repeat;
+}
+
+/* repetir pela linha */
+.repeteX{
+  background-repeat: repeat-x;
+}
+
+/* repetir pela coluna */
+.repeteY{
+  background-repeat: repeat-y;
+  /* retira a border que foi anteriormente aplicada */
+  border: none;
+}
+
+.imagemPosiciona{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imagemPosiciona2{
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.imagemPosiciona3{
+  background-repeat: no-repeat;
+  background-position: 5% bottom;
+}
+
+.imagemPosiciona4{
+  background-repeat: no-repeat;
+  background-position: 25px center;
+}
+
+
+/* classe banner */
+.banner{
+  clear: both;
+  width: 1160px;
+  height: 350px;
+  border: 1px solid #000;
+  margin: 20px auto;
+  background: url(../images/banner1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*
+   o valor contain especifica que a imagem de fundo tenha o maior tamanho possível, mantendo suas proporções e cobrindo a maior parte do container
+
+  o valor cover  especifica que a imagem de fundo tenha o menor tamanho possível para que assim ela ocupe toda a área do container
+   */
+}
+
+/* classe rodape */
+.rodape{
+  width: 100%;
+  height: 100px;
+  /* altura da linha */
+  line-height: 100px;
+  background: #000;
+  color: #fff;
+}

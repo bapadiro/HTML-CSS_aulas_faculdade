@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Personagens</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!-- <link rel="stylesheet" href="meu css"> -->
+	</head>
+
+	<body>
+		<div class="container-fluid my-4">
+			<h2 class="display-4">Relação de personagens</h2>
+			<table class="table table-striped">
+				<thead class="thead-dark">
+					<tr>
+						<th>Nome</th>
+						<th>Velocidade</th>
+						<th>Agilidade</th>
+						<th>Força</th>
+						<th>XP</th>
+					</tr>
+				</thead>
+
+				<tbody id="tabela-herois">
+					<tr class="heroi" id="heroi-um">
+						<td class="nome">Homem Aranha</td>
+						<td class="velocidade">78</td>
+						<td class="agilidade">92</td>
+						<td class="forca">90</td>
+						<td class="xp-final">0</td>
+					</tr>
+
+					<tr class="heroi">
+						<td class="nome">Hulk</td>
+						<td class="velocidade">70</td>
+						<td class="agilidade">78</td>
+						<td class="forca">99</td>
+						<td class="xp-final">0</td>
+					</tr>
+
+					<tr class="heroi">
+						<td class="nome">Homem de Ferro</td>
+						<td class="velocidade">97</td>
+						<td class="agilidade">56</td>
+						<td class="forca">87</td>
+						<td class="xp-final">0</td>
+					</tr>
+
+					<tr class="heroi">
+						<td class="nome">Pantera Negra</td>
+						<td class="velocidade">88</td>
+						<td class="agilidade">92</td>
+						<td class="forca">89</td>
+						<td class="xp-final">0</td>
+					</tr>
+
+					<tr class="heroi">
+						<td class="nome">Viúva Negra</td>
+						<td class="velocidade">86</td>
+						<td class="agilidade">72</td>
+						<td class="forca">72</td>
+						<td class="xp-final">0</td>
+					</tr>
+
+					<tr class="heroi">
+						<td class="nome">Gavião Arqueiro</td>
+						<td class="velocidade">59</td>
+						<td class="agilidade">88</td>
+						<td class="forca">60</td>
+						<td class="xp-final">0</td>
+					</tr>
+
+					<tr class="heroi">
+						<td class="nome">Demolidor</td>
+						<td class="velocidade">88</td>
+						<td class="agilidade">87</td>
+						<td class="forca">98</td>
+						<td class="xp-final">0</td>
+					</tr>
+
+					<tr class="heroi">
+						<td class="nome">Jean Grey</td>
+						<td class="velocidade">78</td>
+						<td class="agilidade">77</td>
+						<td class="forca">72</td>
+						<td class="xp-final">0</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+						<button class="btn 	btn-primary btn-lg" id="calcular">Calcular XP</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5" class="text-center">Linha amarela = Melhorar habilidades</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<!-- <script src="js/percorrer.js"></script> -->
+		<script src="js/calcularxp.js"></script>
+	</body>
+
+</html>

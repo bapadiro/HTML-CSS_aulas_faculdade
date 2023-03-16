@@ -1,0 +1,314 @@
+/* Reset CSS
+Asterisco é usado como seletor universal
+Todos os elementos do HTML usarão essa
+regra */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* declaração de variáveis */
+:root {
+    --bg-dark: #000;
+    --color-primary: #fff;
+    --color-secondary: #dc143c;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.container {    
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+/********************* header *********************/
+.header {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    /* alinhamento vertical */
+    align-items: center ;
+    /* alinhamento horizontal */
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: absolute;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu li {
+    margin: 0 1rem;
+}
+
+.header-menu a {
+    font-weight: 600;
+}
+
+
+.header-menu a:hover {
+    color: var(--color-secondary);
+}
+
+.logo {
+    color: var(--color-secondary);
+}
+
+.header-title {
+    color: var(--color-primary);
+    font-size: 4rem;
+}
+/********************* fim header *********************/
+
+/********************* hero *********************/
+.hero {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-title {
+    font-size: 7vmin;
+    margin: 3rem 0;
+}
+
+.hero-text {
+    font-size: 1.7rem;
+    width: 50%;
+    margin: 0 0 3rem;
+    line-height: 3rem;
+}
+
+.btn {
+    border: 1px solid var(--color-primary);
+    padding: 1.5rem 4rem;
+    border-radius: 7rem;
+    transition: .7s;
+}
+
+.btn-small {
+    padding: 7px 3rem;
+}
+
+.btn:hover {
+    background-color: var(--color-secondary);    
+    border-color: var(--color-secondary);
+}
+/********************* fim hero *********************/
+
+
+
+/*********************    tech  *********************/
+.tech {
+    color: var(--color-primary);
+    display: flex;
+
+    /* alinhamento vertical */
+    align-items: center;
+
+    /* alinhamento horizontal */
+    justify-content: space-evenly;
+
+}
+
+.tech-item {
+    border: 2px solid var(--color-secondary);
+    width: 30%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px;   
+}
+
+.tech-title {
+    font-size: 3rem;
+    margin: 4rem 0;
+}
+
+.tech-text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    width: 90%;
+}
+
+.icon {
+    font-size: 4.5rem;
+    color: var(--color-secondary);
+    transition: .5s;
+}
+
+.icon:hover {
+    transform: rotate(1440deg);
+    cursor: pointer;
+}
+/********************* fim tech *********************/
+
+
+
+/********************* solution *************************/
+.solution {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.solution-title {
+    margin: 3rem 0;
+    font-size: 5rem;    
+}
+
+.solution-text {
+    width: 60%;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    margin-bottom: 4rem;
+}
+
+
+.solution-span {
+    display: block;
+    color: var(--color-secondary);
+}
+
+.solution-span::after {
+    content: 'Agronegócio';
+    animation: solution 5s infinite;
+}
+@keyframes solution {
+    25% {
+        content: 'Indústria 3.0';
+    }
+
+    50% {
+        content: 'Educação';
+        color: aqua;
+    }
+
+    75% {
+        content: 'Robótica';
+    }    
+}
+
+
+.gear {
+    margin-left: 5px;
+    animation: gear 1s linear infinite;
+}
+
+@keyframes gear {
+    
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+/********************* fim solution *********************/
+
+
+/********************* gallery **************************/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.gallery-item {
+    width: 30%;
+    background-color: var(--color-primary);
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 1rem 0;
+    transition: .5s;
+    
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    transform: scale(1.2);    
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.gallery-item figcaption {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+
+/********************* fim gallery *********************/
+
+
+
+
+
+
+
+
+.bg-image-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)),
+    url(../images/pexels-negative-space-34140.jpg);   
+}
+
+.bg-image-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), 
+    url(../images/pexels-expect-best-246684.jpg);
+}
+
+.bg-image-3 {
+    background-image: url(../images/pexels-picjumbocom-196659.jpg);
+}
+
+.bg-color-1 {
+    background-color: var(--bg-dark);
+ 
+}
+
+
+
+
+
+
+
+
